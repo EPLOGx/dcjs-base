@@ -9,10 +9,19 @@ The discord.js v14 base that I use for all my bots.
 ## Requirements
 * Node.js
 
-## Installation
-* Setup package: `npm init -y`
-                 `change in the package.json "main" from "index.js" to "src/bot.js"`
-                 `change in the package.json "test" from "echo \"Error: no test specified\" && exit 1" to "node ."`
-* Node.js modules: `npm i discord.js discord-api-types @discordjs/rest dotenv chalk@5.3.0`
-* Create .env: `create a .env file in the base folder and insert into there: token=YOUR_DISCORD_TOKEN`
-* Run bot: `npm run test` 
+## Installation ##
+ 
+* Setup package:<br>
+  `npm init -y` <br>
+  `change in the package.json "main" from "index.js" to "src/bot.js"` <br>
+  `change in the package.json "test" from "echo \"Error: no test specified\" && exit 1" to "node ."`
+
+* Node.js modules:<br>
+  `npm i discord.js discord-api-types @discordjs/rest dotenv chalk@5.3.0`
+* Create a .env file in the base folder and paste it there:
+ 
+	  token=YOUR_DISCORD_TOKEN
+	  client_id=YOUR_APP_ID
+  
+* Run bot:<br>
+  `npm run test` 
