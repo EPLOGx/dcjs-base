@@ -3,7 +3,7 @@
 The discord.js v14 base that I use for all my bots.
 
 ## Stats
-<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/eplogx/dcjsv14-base/total?color=36c7fc&style=for-the-badge"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/eplogx/dcjsv14-base?color=36c7fc&style=for-the-badge">
+test
 
 
 ## Requirements
