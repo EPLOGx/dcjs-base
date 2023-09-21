@@ -21,7 +21,7 @@ module.exports = (client) => {
           );
         }
       }
-      const clientId = "CLIENT_ID";
+      const { clientId } = process.env;
       const rest = new REST({ version: "10" }).setToken(process.env.token);
       try {
         console.log("[CommandHandler] SlashCommands werden syncronisiert...");
