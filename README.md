@@ -21,7 +21,7 @@ The discord.js **v14** base that I use for all my bots.
 * Create a .env file in the base folder and paste it there:
  
 	  token=YOUR_DISCORD_TOKEN
-	  clientId=YOUR_APP_ID
+	  clientid=YOUR_APP_ID
   
 * Run bot:<br>
   `npm run test` 
