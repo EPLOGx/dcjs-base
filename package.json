@@ -1,7 +1,7 @@
 {
-  "name": "ejakulat",
+  "name": "dcjs-base",
   "version": "1.0.0",
-  "description": "simple JavaScript Discord bot",
+  "description": "simple node.js dcbot base",
   "main": "src/bot.js",
   "scripts": {
     "start": "node ."
