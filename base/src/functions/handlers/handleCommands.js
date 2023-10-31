@@ -1,6 +1,7 @@
 const fs = require("fs");
 const { Routes } = require("discord-api-types/v10");
 const { REST } = require("@discordjs/rest");
+const { clientid } = process.env;
 
 module.exports = (client) => {
   try {
@@ -21,12 +22,11 @@ module.exports = (client) => {
           );
         }
       }
-      const { clientId } = process.env;
       const rest = new REST({ version: "10" }).setToken(process.env.token);
       try {
         console.log("[CommandHandler] SlashCommands werden syncronisiert...");
 
-        await rest.put(Routes.applicationCommands(clientId), {
+        await rest.put(Routes.applicationCommands(clientid), {
           body: client.commandArray,
         });
 
