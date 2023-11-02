@@ -44,19 +44,23 @@ module.exports = {
       setTimeout(() => timestamps.delete(interaction.user.id), cooldownAmount);
 
       try {
+        if (command.useephermal) {
+          await interaction.deferReply({ephemeral: true});
+        } else {
+          await interaction.deferReply({ephemeral: false});
+        }
         await command.execute(interaction, client);
       } catch (error) {
         console.error(error);
-        await interaction.reply({
+        await interaction.editReply({
           embeds: [
             new EmbedBuilder()
               .setColor(0xa2b5ff)
               .setTitle("Error")
               .setDescription(
-                `[CommandHandler] couldn't execute ${commandName}!`
+                `**[CommandHandler]** couldn't execute ${commandName}!`
               ),
           ],
-          ephemeral: true,
         });
       }
     }
